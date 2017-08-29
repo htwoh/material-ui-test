@@ -4,6 +4,9 @@ import { withStyles } from 'material-ui/styles';
 import Paper from 'material-ui/Paper';
 import AppBar from 'material-ui/AppBar';
 import Tabs, { Tab } from 'material-ui/Tabs';
+import Typography from 'material-ui/Typography';
+import { FormLabel, FormGroup, FormControlLabel } from 'material-ui/Form';
+import Checkbox from 'material-ui/Checkbox';
 
 function TabContainer(props) {
     return (
@@ -53,7 +56,36 @@ class CenteredTabs extends Component {
                 </AppBar>
                 {value === 0 &&
                 <TabContainer>
-                    {'Item One'}
+                    <FormLabel component="label">상품종류</FormLabel>
+                    <FormGroup row>
+                        <FormControlLabel
+                            control={
+                                <Checkbox
+                                    value="checkedA"
+                                />
+                            }
+                            label="전체"
+                        />
+                        <FormControlLabel
+                            control={
+                                <Checkbox
+                                    value="checkedA"
+                                />
+                            }
+                            label="패키지여행"
+                        />
+                        <FormControlLabel
+                            control={
+                                <Checkbox
+                                    value="checkedA"
+                                />
+                            }
+                            label="자유여행"
+                        />
+                    </FormGroup>
+                    <FormLabel component="label">출발일 선택</FormLabel>
+                    <FormGroup row>
+                    </FormGroup>
                 </TabContainer>}
                 {value === 1 &&
                 <TabContainer>

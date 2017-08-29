@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import CenteredTabs from './components/CenteredTabs';
+import RecipeReviewCard from './components/RecipeReviewCard';
 import Grid from 'material-ui/Grid';
 
 class App extends Component {
@@ -15,6 +16,11 @@ class App extends Component {
                     <Grid item xs>
                     </Grid>
                 </Grid>
+                <RecipeReviewCard />
+                <RecipeReviewCard />
+                <RecipeReviewCard />
+                <RecipeReviewCard />
+                <RecipeReviewCard />
             </div>
         );
     }
