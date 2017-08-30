@@ -6,22 +6,29 @@ import Grid from 'material-ui/Grid';
 class App extends Component {
     render() {
         return (
-            <div>
-                <Grid container spacing={24}>
-                    <Grid item xs>
-                    </Grid>
-                    <Grid item xs>
-                        <CenteredTabs />
-                    </Grid>
-                    <Grid item xs>
+            <Grid container>
+                <Grid item xs={12}>
+                    <Grid container justify="center">
+                        <Grid>
+                            <CenteredTabs />
+                        </Grid>
                     </Grid>
                 </Grid>
-                <RecipeReviewCard />
-                <RecipeReviewCard />
-                <RecipeReviewCard />
-                <RecipeReviewCard />
-                <RecipeReviewCard />
-            </div>
+                <Grid item xs={12}>
+                    <Grid container>
+                        <Grid item>
+                            <RecipeReviewCard />
+                        </Grid>
+                        <Grid item>
+                            <RecipeReviewCard />
+                        </Grid>
+                        <Grid item>
+                            <RecipeReviewCard />
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+
         );
     }
 }

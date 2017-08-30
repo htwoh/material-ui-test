@@ -7,6 +7,7 @@ import Tabs, { Tab } from 'material-ui/Tabs';
 import Typography from 'material-ui/Typography';
 import { FormLabel, FormGroup, FormControlLabel } from 'material-ui/Form';
 import Checkbox from 'material-ui/Checkbox';
+import Button from 'material-ui/Button';
 
 function TabContainer(props) {
     return (
@@ -82,9 +83,9 @@ class CenteredTabs extends Component {
                             }
                             label="자유여행"
                         />
-                    </FormGroup>
-                    <FormLabel component="label">출발일 선택</FormLabel>
-                    <FormGroup row>
+                        <Button raised color="primary">
+                            검색
+                        </Button>
                     </FormGroup>
                 </TabContainer>}
                 {value === 1 &&
